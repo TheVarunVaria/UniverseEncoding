@@ -16,7 +16,8 @@ By clicking on "Enable Drive API" button, a json file is downloaded, you have to
 
 
 client_secrets.json need to be in the same directory as the script
-`drive = GoogleDrive(gauth)`
+
+<code>drive = GoogleDrive(gauth)</code>
 
 This code open your google account authentication in a new window.
 
