@@ -15,12 +15,12 @@ By clicking on "Enable Drive API" button, a json file is downloaded, you have to
 ### Accessing google drive using pydrive
 
 
-`from pydrive.auth import GoogleAuth
+`from pydrive.auth import GoogleAuth`
 from pydrive.drive import GoogleDrive
 
 gauth = GoogleAuth()
 gauth.LocalWebserverAuth() # client_secrets.json need to be in the same directory as the script
-drive = GoogleDrive(gauth)`
+drive = GoogleDrive(gauth)
 
 This code open your google account authentication in a new window.
 
