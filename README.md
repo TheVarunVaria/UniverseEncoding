@@ -15,12 +15,8 @@ By clicking on "Enable Drive API" button, a json file is downloaded, you have to
 ### Accessing google drive using pydrive
 
 
-```from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-
-gauth = GoogleAuth()
-gauth.LocalWebserverAuth() # client_secrets.json need to be in the same directory as the script
-drive = GoogleDrive(gauth)```
+client_secrets.json need to be in the same directory as the script
+`drive = GoogleDrive(gauth)`
 
 This code open your google account authentication in a new window.
 
@@ -29,10 +25,5 @@ This code open your google account authentication in a new window.
 
 ### View all folders and file in your Google Drive
 
-`fileList = drive.ListFile({'q': "'root' in parents and trashed=false"}).GetList()
-for file in fileList:
-  print('Title: %s, ID: %s' % (file['title'], file['id']))
-  # Get the folder ID that you want
-  if(file['title'] == "To Share"):
-      fileID = file['id']`
+Using ListFile mthod, we are able to access the files in the root directory of Google drive. We can also open a folder by accessing it's id and not the name
       
