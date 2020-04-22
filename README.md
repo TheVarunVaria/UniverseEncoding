@@ -4,6 +4,8 @@ The Universal Sentence Encoder encodes text into high dimensional vectors that c
 
 The model is trained and optimized for greater-than-word length text, such as sentences, phrases or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is variable length English text and the output is a 512 dimensional vector.
 
+<img src="Images/1.png" width="70%" />
+
 ## Example use
 From the official Website:
 
@@ -25,6 +27,8 @@ print(session.run(embeddings))
 ## Semantic Similarity
 
 Semantic similarity is a measure of the degree to which two pieces of text carry the same meaning. This is broadly useful in obtaining good coverage over the numerous ways that a thought can be expressed using language without needing to manually enumerate them.
+
+<img src="Images/example-similarity.png" width="70%" />
 
 ## Why convert text into vectors?
 
